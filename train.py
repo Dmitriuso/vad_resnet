@@ -5,9 +5,15 @@ import torch.nn as nn
 import torch.optim as optim
 # from torchsummary import summary as summary_
 
+from pathlib import Path
+
 from data_tools import prepare_input_img, check_length
 import model_nn as model
 
+
+ROOT = Path(__file__).parent
+MODEL = ROOT / "model"
+MODEL.mkdir(parents=False, exist_ok=True)
 
 def train_model(params):
 

@@ -53,7 +53,7 @@ if __name__ == '__main__':
 
         params = {
             'test_data': args.test_speech_dir,
-            'model_path': os.path.join(args.model_dir, 'vad_model1.pt'),
+            'model_path': os.path.join(args.model_dir, 'vad_model.pt'),
             'smoothing': args.smoothing,
             'visualize': args.visualize,
             'parallel': args.parallel,
