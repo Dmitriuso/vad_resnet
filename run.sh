@@ -8,6 +8,10 @@ tar -xvf $DATA/$dataset_prefix.tar.gz -C $DATA
 rm $DATA/$dataset_prefix.tar.gz
 mv $DATA/LibriSpeech $DATA/raw_data
 
+# install dependencies
+pip install --upgrade pip setuptools wheel
+pip install -r $PWD/requirements.txt
+
 # create data for training
 python $PWD/main.py --mode creating_data
 
