@@ -1,0 +1,4 @@
+torch
+torchaudio
+librosa>=0.10.1
+seaborn>=0.13.0
